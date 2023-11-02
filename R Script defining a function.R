@@ -7,7 +7,7 @@ transform_dataset <- function(data,calculate_type) {
   }
   
   #calculate means of each column
-  if (type == 'means') {
+  if (calculate_type == 'means') {
     
   # Select only the numeric columns from the dataset
   numeric_data <- data[sapply(data, is.numeric)]

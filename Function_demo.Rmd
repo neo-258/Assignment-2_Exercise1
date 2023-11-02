@@ -1,0 +1,32 @@
+---
+title: "function_demo"
+author: "Mao Li"
+date: "2023-11-02"
+output: html_document
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+```{r}
+ # Use the function
+source('R Script defining a function.R')
+# Load the dataset
+data("mtcars") 
+# Apply the means transformation
+transformed_mtcars_means <- transform_dataset(mtcars, "means")
+# Display the first few rows of the transformed data
+head(transformed_mtcars_means)
+```
+
+
+
+## Appendix: All code in this assignment
+
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE} 
+# this chunk generates the complete code appendix. 
+# eval=FALSE tells R not to run (``evaluate'') the code here (it was already run before).
+```
